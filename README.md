@@ -1,5 +1,5 @@
 # Fraud Detection
-##**Anomaly Detection Implementation(Credit card fraud) - Random Forest Classifier :**
+## **Anomaly Detection Implementation(Credit card fraud) - Random Forest Classifier :**
 
 The credit card data set is heavily imbalanced with more than 99% Valid records. 
 
