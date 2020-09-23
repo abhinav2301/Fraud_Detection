@@ -3,7 +3,7 @@
 
 The credit card data set is heavily imbalanced with more than 99% Valid records. 
 
-###**Feature Engineering** :
+### **Feature Engineering** :
 
 The first step is to Scale the "Time" and "Amount" column appropriately. The Robust Scaler has been used for transforming the due to the nature of the outliers.
 
@@ -15,7 +15,7 @@ Centering and scaling happen independently on each feature by computing the rele
 ![Image2](https://github.com/abhinav2301/Fraud_Detection/blob/master/images/correlation%20matrix.png)
 
 
-###**Balancing the Dataset** :
+### **Balancing the Dataset** :
 
 The imbalanced nature of the data means that directly modelling the given dataset will not provide an accurate model. There are 2 popular methods to deal with imbalanced datasets :
 
@@ -25,7 +25,7 @@ The imbalanced nature of the data means that directly modelling the given datase
 Undersampling while helping balance the data, discards a lot of it. This means that the model may potentially loose out on valuable information. Thereby we've used **SMOTE** to oversample the minority class.
 
 
-#####**SMOTE** :
+##### **SMOTE** :
 
 > The SMOTE algorithm is one of the first and still the most popular algorithmic approach to generating new dataset samples. The algorithm, introduced and accessibly enough described in a 2002 paper, works by oversampling the underlying dataset with new synthetic points.
 > The SMOTE algorithm is parameterized with k_neighbors (the number of nearest neighbors it will consider) and the number of new points you wish to create. Each step of the algorithm will:
@@ -38,11 +38,11 @@ Undersampling while helping balance the data, discards a lot of it. This means t
 4.   Generate and place a new point on the vector between the two points, located lambda percent of the way from the original point.
 
 
-###**Model** :
+### **Model** :
 
 A random forest classifier with grid search hyper parameter tuning. An imbalanced pipeline is used to oversample the data and then the oversampled data is used to train the data. However the oversampled values are not used for the validation. 
 
-###**Model Performance** :
+### **Model Performance** :
 
 With highly imbalanced models, accuracy is a bad measure to check a models performance due to majority bias. Recall and F1 score are a much better indicator of the models performance. 
 
