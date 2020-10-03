@@ -49,3 +49,5 @@ With highly imbalanced models, accuracy is a bad measure to check a models perfo
 Initial attempts to train the model on the unbalanced dataset resulted in a recall of 77% which improved to 86% on the model trained on the Oversampled data.
 
 ![Image3](https://github.com/abhinav2301/Fraud_Detection/blob/master/images/confusion%20matrix.png)
+
+Automated
